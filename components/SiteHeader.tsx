@@ -4,6 +4,7 @@ import Link  from "next/link";
 import Image from "next/image";
 import styles from "../styles/SiteHeader.module.css";
 import logo from "../images/logo.svg";
+
 const SiteHeader = () =>{
     return(
         <>
@@ -24,7 +25,7 @@ const SiteHeader = () =>{
                             <Link href="#" passHref>
                                 <Nav.Link>About</Nav.Link>
                             </Link>
-                            <Link href={"./dashboard"} passHref>
+                            <Link href={"/dashboard"} passHref>
                                 <Nav.Link className={styles.sign_in}>Sign In</Nav.Link>
                             </Link>
                         </Nav>
