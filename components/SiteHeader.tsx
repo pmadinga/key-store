@@ -1,18 +1,34 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
-import Layout from "../components/Layout";
+import Link  from "next/link";
+import Image from "next/image";
+import styles from "../styles/SiteHeader.module.css";
+import logo from "../images/logo.svg";
 const SiteHeader = () =>{
     return(
         <>
-            <Navbar bg="light" expand="lg">
+            <Navbar bg="light" expand="lg" className="py-0">
                 <Container>
-                    <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+                    <Navbar.Brand href="/" className={styles.navbar_brand}> 
+                        <Image 
+                            alt="Logo"
+                            width={50} 
+                            height={50} 
+                            src={logo}
+                        />
+                        <span className={styles.brand_name}>Key Store</span>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
-                        
-                    </Nav>
+                    <Navbar.Collapse id="basic-navbar-nav">
+                        <Nav className="ms-auto">
+                            <Link href="#" passHref>
+                                <Nav.Link>About</Nav.Link>
+                            </Link>
+                            <Link href={"./dashboard"} passHref>
+                                <Nav.Link className={styles.sign_in}>Sign In</Nav.Link>
+                            </Link>
+                        </Nav>
+                    </Navbar.Collapse>
                 </Container>
             </Navbar>
         </>

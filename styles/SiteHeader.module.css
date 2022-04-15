@@ -1,0 +1,7 @@
+.navbar_brand{
+    display: flex;
+    align-items: center;
+}
+.brand_name{
+    margin-left: 1rem;
+}

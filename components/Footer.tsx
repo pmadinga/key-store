@@ -1,6 +1,12 @@
+import { Container } from "react-bootstrap";
+
 const Footer = () =>{
     return(
-        <footer>Made with love by Phiwa</footer>
+        <footer>
+            <Container>
+                Made with love by Phiwa
+            </Container>       
+        </footer>
     );
 };
 
