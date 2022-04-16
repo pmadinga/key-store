@@ -9,7 +9,7 @@ const SiteHeader = () =>{
     return(
         <>
             <Navbar bg="light" expand="lg" className="py-0">
-                <Container>
+                <Container fluid>
                     <Navbar.Brand href="/" className={styles.navbar_brand}> 
                         <Image 
                             alt="Logo"

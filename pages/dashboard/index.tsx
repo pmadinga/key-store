@@ -12,7 +12,8 @@ import AdminUsers from "./AdminUsers";
 
 const Dashboard: NextPage = () =>{
     const [showComponent, setShowComponent] = useState<any>("start");
-
+    console.log(showComponent);
+    
     return(
         <Container fluid >
             <Row>
