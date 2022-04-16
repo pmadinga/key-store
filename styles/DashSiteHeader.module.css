@@ -1,0 +1,12 @@
+.user{
+    align-items: center;
+    display: flex;
+    border-left: 2px solid #fff;
+    margin-left: 1rem;
+    padding-left: 1rem;
+}
+.user_name{
+    color: #fff;
+    display: flex;
+
+}

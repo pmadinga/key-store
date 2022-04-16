@@ -1,0 +1,39 @@
+.sidenav{
+    background-color: #212529;
+    color: #fff;
+    height: 100vh;
+}
+.menu_icon{
+    margin-left: 70%;
+}
+.side_btn{
+    width: 100%;
+    background-color: #212529;
+    /* border: none; */
+    border-radius: 0;
+    border: none;
+    border-bottom: #fff 1px solid!important;
+    
+}
+.side_btn:first-child{
+    border-top: 1px solid #fff;
+}
+.side_btn:last-child{
+    border-bottom: 1px solid #fff
+}
+.side_btn:hover{
+    background-color: #fff;
+    color: #212529;
+}
+.side_btn:active{
+    background-color: #fff!important;
+    color: #212529;
+    outline: none!important;
+    box-shadow: none!important;
+}
+.side_btn:focus{
+    background-color: #fff!important;
+    color: #212529;
+    outline: none;
+    box-shadow: none;
+}
