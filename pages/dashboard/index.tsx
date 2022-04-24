@@ -9,11 +9,8 @@ import { useState } from "react";
 import Blog from "./Blog";
 import AdminUsers from "./AdminUsers";
 
-
 const Dashboard: NextPage = () =>{
     const [showComponent, setShowComponent] = useState<any>("start");
-    console.log(showComponent);
-    
     return(
         <Container fluid >
             <Row>
@@ -22,10 +19,10 @@ const Dashboard: NextPage = () =>{
                         <BiMenuAltRight className={styles.menu_icon}/>
                     </IconContext.Provider>
                     <div className={styles.side_links}>
-                        <Button className={styles.side_btn} onClick={() => {setShowComponent("start");}} >Participants</Button>
-                        <Button className={styles.side_btn} onClick={() => {setShowComponent("ann");}} >Anouncements</Button>
-                        <Button className={styles.side_btn} onClick={() => {setShowComponent("blog");}} >Blog</Button>
-                        <Button className={styles.side_btn} onClick={() => {setShowComponent("users");}} >Users</Button>
+                        <Button className={styles.side_btn} onClick={ () => {setShowComponent("start");} }>Participants</Button>
+                        <Button className={styles.side_btn} onClick={ () => {setShowComponent("ann");} }>Anouncements</Button>
+                        <Button className={styles.side_btn} onClick={ () => {setShowComponent("blog");} }>Blog</Button>
+                        <Button className={styles.side_btn} onClick={ () => {setShowComponent("users");} }>Users</Button>
                     </div>
                 </Col>
                 <Col>
@@ -39,4 +36,4 @@ const Dashboard: NextPage = () =>{
     );
 };
 
-export default Dashboard;
+export default Dashboard; 
