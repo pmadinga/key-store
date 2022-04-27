@@ -8,11 +8,16 @@ import Parcitipants from "./Participants";
 import { useState } from "react";
 import Blog from "./Blog";
 import AdminUsers from "./AdminUsers";
+import Head from "next/head";
 
 const Dashboard: NextPage = () =>{
     const [showComponent, setShowComponent] = useState<any>("start");
     return(
-        <Container fluid >
+        <>
+            <Head>
+                
+            </Head>
+            <Container fluid >
             <Row>
                 <Col lg="2" className={`${styles.sidenav} px-0`}>
                     <IconContext.Provider value={{color: "white", size: "40px"}}>
@@ -33,6 +38,8 @@ const Dashboard: NextPage = () =>{
                 </Col>
             </Row>
         </Container>
+        </>
+        
     );
 };
 
